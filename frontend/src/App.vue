@@ -1,15 +1,17 @@
 <template>
   <div>
-    <DashBoard />
+    <DashBoard class="dashboard"></DashBoard>
+    <TableValue></TableValue>
   </div>
 </template>
 
 <script>
 import DashBoard from './components/DashBoard.vue';
+import TableValue from './components/TableValue.vue';
 export default {
   name: 'App',
   components: {
-    DashBoard
+    DashBoard, TableValue
   }
 }
 </script>
@@ -23,4 +25,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 } */
+.dashboard {
+  margin-bottom: 30px;
+}
 </style>
