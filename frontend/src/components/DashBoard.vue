@@ -3,8 +3,8 @@
     <div fluid class="container">
       <div class="grid">
         <div class="page-name">
-          <h1>DNKH Factory</h1>
-          <h3>Production Efficiency</h3>
+          <p class="factory">DNKH Factory</p>
+          <p class="production">Production Efficiency</p>
           <p>Date : {{ currentDate() }}</p>
         </div>
         <div class="grid-sign">
@@ -18,7 +18,7 @@
           <div class="grid-target">
             <div class="grid-value">
               <div class="or-value">OR</div>
-              <hr>
+              <hr />
               <div class="target-value">Target</div>
             </div>
             <div class="symbol">O</div>
@@ -32,14 +32,16 @@
               </div>
               <div class="grid-container-second">
                 <div class="second-one">
-                  <div class="textsecond-one">SRKH</div>
+                  <div class="text-second-one">SRKH</div>
                 </div>
                 <div class="second-two">
-                <div class="text-second-two">Tube S/A</div>
+                  <div class="text-second-two">Tube S/A</div>
                 </div>
               </div>
               <div class="grid-container-third">
-                <div class="third-one">SRKH</div>
+                <div class="third-one">
+                  <div class="text-third-one">SRKH</div>
+                </div>
                 <div class="third-two">
                   <div class="container-third-two-top">
                     <div class="text-third-two-top">Tube S/A</div>
@@ -52,79 +54,144 @@
             </div>
             <div class="second-alarm">
               <div class="container-second-alarm-first">
-                <div class="container-second-alarm-first-one">Boss Lathe</div>
-                <div class="container-second-alarm-first-two">Boss Lathe</div>
-                <div class="container-second-alarm-first-three">Dojo</div>
+                <div class="container-second-alarm-first-one">
+                  <div class="text-container-second-alarm-first-one">Boss Lathe</div>
+                </div>
+                <div class="container-second-alarm-first-two">
+                  <div class="text-container-second-alarm-first-two">Boss Lathe</div>
+                </div>
+                <div class="container-second-alarm-first-three">
+                  <div class="text-container-second-alarm-first-three">Dojo</div>
+                </div>
               </div>
               <div class="container-second-alarm-second">
-                <div class="container-second-alarm-second-one">Armature & Molding</div>
-                <div class="container-second-alarm-second-two">
-                  <div class="container-second-alarm-second-two-top">
-                    <div class="container-second-alarm-second-two-top-first">TPM</div>
-                    <div class="container-second-alarm-second-two-top-second">
-                      <div class="container-second-alarm-second-two-top-second-top">TL Centralize</div>
-                      <div class="container-second-alarm-second-two-top-second-bottom">Rest Area</div>
+                <div class="grid-container-second-alarm-second-one">
+                  <div class="grid-container-second-alarm-second-one-first">
+                    <div class="grid-container-second-alarm-second-one-first-text">Armature</div>
+                  </div>
+                  <div class="grid-container-second-alarm-second-two-second">
+                    <div class="grid-container-second-alarm-second-two-second-top">
+                      <div class="grid-container-second-alarm-second-two-second-top-text">PC Store</div>
+                    </div>
+                    <div class="grid-container-second-alarm-second-two-second-bottom">
+                      <div class="grid-container-second-alarm-second-two-second-bottom-text">Molding</div>
                     </div>
                   </div>
-                  <div class="container-second-alarm-second-two-bottom">PC Store</div>
+                </div>
+                <div class="container-second-alarm-second-two">
+                  <div class="container-second-alarm-second-two-top">
+                    <div class="container-second-alarm-second-two-top-first">
+                      <div class="text-container-second-alarm-second-two-top-first">TPM</div>
+                    </div>
+                    <div class="container-second-alarm-second-two-top-second">
+                      <div
+                        class="container-second-alarm-second-two-top-second-top"
+                      >
+                        <div class="text-container-second-alarm-second-two-top-second-top">TL Centralize</div>
+                      </div>
+                      <div
+                        class="container-second-alarm-second-two-top-second-bottom"
+                      >
+                        <div class="text-container-second-alarm-second-two-top-second-bottom">Rest Area</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-second-alarm-second-two-bottom">
+                    <div class="text-container-second-alarm-second-two-bottom">PC Store</div>
+                  </div>
                 </div>
               </div>
               <div class="container-second-alarm-third">
                 <div class="container-second-alarm-third-first">
                   <div class="container-second-alarm-third-first-top">
-                    <div class="container-second-alarm-third-first-top-first">Washing</div>
-                    <div class="container-second-alarm-third-first-top-second">Pre Lathe</div>
+                    <div class="container-second-alarm-third-first-top-text">Washing</div>
                   </div>
                   <div class="container-second-alarm-third-first-bottom">
-                    <div class="container-second-alarm-third-first-bottom-first">Assy 1</div>
-                    <div class="container-second-alarm-third-first-bottom-second">Assy 2</div>
-                    <div class="container-second-alarm-third-first-bottom-third">Rest Area</div>
+                    <div class="container-second-alarm-third-first-bottom-text">Assy 1</div>
                   </div>
                 </div>
                 <div class="container-second-alarm-third-second">
-                  <div class="container-second-alarm-third-second-second">
-                    <div class="container-second-alarm-third-second-second-first">
-                      <div class="container-second-alarm-third-second-second-first-top">Sensor & Stay</div>
-                      <div class="container-second-alarm-third-second-second-first-bottom">Level & Switch</div>
+                  <div class="container-second-alarm-third-second-top">
+                    <div class="container-second-alarm-third-second-top-text">Pre Lathe</div>
+                  </div>
+                  <div class="container-second-alarm-third-second-bottom">
+                    <div class="container-second-alarm-third-second-bottom-first">
+                      <div class="container-second-alarm-third-second-bottom-first-text">Assy 2</div>
                     </div>
-                    <div class="container-second-alarm-third-second-second-second">
-                      <div class="container-second-alarm-third-second-second-second-top">PC Store</div>
-                      <div class="container-second-alarm-third-second-second-second-bottom">Pack</div>
+                    <div class="container-second-alarm-third-second-bottom-second">
+                      <div class="container-second-alarm-third-second-bottom-second-text">Rest Area</div>
                     </div>
+                  </div>
+                </div>
+                <div class="container-second-alarm-third-third">
+                  <div class="container-second-alarm-third-third-top">
+                    <div class="container-second-alarm-third-third-top-text">Sensor</div>
+                  </div>
+                  <div class="container-second-alarm-third-third-middle">
+                    <div class="container-second-alarm-third-third-middle-text">Stay</div>
+                  </div>
+                  <div class="container-second-alarm-third-third-bottom">
+                    <div class="container-second-alarm-third-third-bottom-text">Level Switch</div>
+                  </div>
+                </div>
+                <div class="container-second-alarm-third-fourth">
+                  <div class="container-second-alarm-third-fourth-top">
+                    <div class="container-second-alarm-third-fourth-top-text">PC Store</div>
+                  </div>
+                  <div class="container-second-alarm-third-fourth-bottom">
+                    <div class="container-second-alarm-third-fourth-bottom-text">Pack</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="third-alarm">
-              <div class="third-alarm-top">
-                <div class="third-alarm-top-first">Rad. Tube</div>
-                <div class="third-alarm-top-second">Rad. Tube, Insert, Oil Sub, Bracket</div>
-                <div class="third-alarm-top-third">Rad. Injections</div>
-                <div class="third-alarm-top-fourth">Rad. Injections Die</div>
-                <div class="third-alarm-top-fifth">JMD</div>
-              </div>
-              <div class="third-alarm-bottom">
-                <div class="third-alarm-bottom-first">
-                  <div class="third-alarm-bottom-first-top">TL</div>
-                  <div class="third-alarm-bottom-first-middle">Rest Area</div>
-                  <div class="third-alarm-bottom-first-bottom">
-                    <div class="third-alarm-bottom-first-bottom-top">Rest Area</div>
-                    <div class="third-alarm-bottom-first-bottom-bottom">TL</div>
+              <div class="third-alarm-first">
+                <div class="third-alarm-first-top">
+                  <div class="third-alarm-first-top-first">
+                    <div class="third-alarm-first-top-first-text">Rad. Tube</div>
+                  </div>
+                  <div class="third-alarm-first-top-second">
+                    <div class="third-alarm-first-top-second-text">Rad. Tube, Insert, Oil Sub, Bracket</div>
                   </div>
                 </div>
-                <div class="third-alarm-bottom-second">
-                  <div class="third-alarm-bottom-second-top">Rad. Fin</div>
-                  <div class="third-alarm-bottom-second-middle">Rad. Core</div>
-                  <div class="third-alarm-bottom-second-bottom">Rad. Assy 4</div>
+                <div class="third-alarm-first-bottom">
+                  <div class="third-alarm-first-bottom-top">
+                    <div class="third-alarm-first-bottom-top-top">
+                      <div class="third-alarm-first-bottom-top-top-first">
+                        <div class="third-alarm-first-bottom-top-top-first-text">TL</div>
+                      </div>
+                      <div class="third-alarm-first-bottom-top-top-second">
+                        <div class="third-alarm-first-bottom-top-top-second-text">Rad. Fin</div>
+                      </div>
+                      <div class="third-alarm-first-bottom-top-top-third">
+                        <div class="third-alarm-first-bottom-top-top-third-text">Rad. Fin</div>
+                      </div>
+                    </div>
+                    <div class="third-alarm-first-bottom-top-bottom">
+                      <div class="third-alarm-first-bottom-top-bottom-first">
+                        <div class="third-alarm-first-bottom-top-bottom-first-text">Rest Area</div>
+                      </div>
+                      <div class="third-alarm-first-bottom-top-bottom-second">
+                        <div class="third-alarm-first-bottom-top-bottom-second-text">Rad. Core 1</div>
+                      </div>
+                      <div class="third-alarm-first-bottom-top-bottom-third">
+                        <div class="third-alarm-first-bottom-top-bottom-third-text">Rad. Core 5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="third-alarm-first-bottom-bottom">
+                    <div class="third-alarm-first-bottom-bottom-first">
+                      <div class="third-alarm-first-bottom-bottom-first-top">
+                        <div class="third-alarm-first-bottom-bottom-first-top-text">Rest Area</div>
+                      </div>
+                      <div class="third-alarm-first-bottom-bottom-first-bottom">2</div>
+                    </div>
+                    <div class="third-alarm-first-bottom-bottom-second">2</div>
+                    <div class="third-alarm-first-bottom-bottom-third">3</div>
+                  </div>
                 </div>
-                <div class="third-alarm-bottom-third">
-                  <div class="third-alarm-bottom-third-top">Rad. Fin</div>
-                  <div class="third-alarm-bottom-third-middle">Rad. Core</div>
-                  <div class="third-alarm-bottom-third-bottom">Rad. Assy 6</div>
-                </div>
-                <div class="third-alarm-bottom-fourth">Rad. Brazing</div>
-                <div class="third-alarm-bottom-fifth">Future Area</div>
               </div>
+              <div class="third-alarm-second">2</div>
             </div>
           </div>
         </div>
@@ -149,15 +216,17 @@ export default {
 </script>
 
 <style>
+.factory {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.production {
+  font-size: 20px;
+  font-weight: bold;
+}
 .container {
   background-color: white;
   border: 2px solid black;
-}
-.content {
-  background-color: lightcyan;
-  /* border: 2px solid black; */
-  box-sizing: border-box;
-  padding: 10px;
 }
 .grid {
   display: grid;
@@ -170,7 +239,7 @@ export default {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "value" "symbol";
-  margin: 10px;
+  /* margin: 10px; */
 }
 .grid-value {
   margin-top: 5px;
@@ -183,7 +252,7 @@ export default {
 }
 .page-name {
   grid-area: name;
-  margin: 10px;
+  margin-left: 5px;
   background-color: white;
 }
 .page-sign {
@@ -196,9 +265,10 @@ export default {
   margin: 10px;
 }
 .page-target {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 65px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 120px;
+  margin-bottom: 80px;
   border: 3px solid limegreen;
   border-radius: 10px;
   background-color: white;
@@ -245,13 +315,16 @@ export default {
 }
 .or-value {
   margin-bottom: 5px;
-  font-size: 25px;
+  margin-left: 5px;
+  font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
+  color: limegreen;
 }
 .target-value {
   margin-top: 5px;
-  font-size: 25px;
+  margin-left: 5px;
+  font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -263,7 +336,7 @@ export default {
   font-weight: bold;
   color: limegreen;
   margin-right: 20px;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 hr {
@@ -286,144 +359,16 @@ p {
   /* border: 1px solid black; */
   margin: 5px;
 }
-.third-alarm {
-  /* border: 1px solid black; */
-  margin: 5px;
-}
-.third-alarm-top {
-  /* border: 1px solid black; */
-  margin-bottom: 5px;
-
-  display: grid;
-  grid-template-columns: 3fr 3fr 5fr 4fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "first" "second" "third" "fourth" "fifth";
-}
-.third-alarm-top-first {
-  border: 1px solid black;
-  margin-right: 5px;
-  background-color: limegreen;
-}
-.third-alarm-top-second {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: limegreen;
-  margin-right: 5px;
-}
-.third-alarm-top-third {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: limegreen;
-  margin-right: 5px;
-}
-.third-alarm-top-fourth {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: limegreen;
-  margin-right: 5px;
-}
-.third-alarm-top-fifth {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: white;
-}
-.third-alarm-bottom {
-  /* border: 1px solid black; */
-  margin-top: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 3fr 5fr;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "first" "second" "third" "fourth" "fifth";
-}
-.third-alarm-bottom-first {
-  /* border: 1px solid black; */
-  margin-right: 5px;
-}
-.third-alarm-bottom-first-top {
-  border: 1px solid black;
-  margin-bottom: 5px;
-  background-color: white;
-}
-.third-alarm-bottom-first-middle {
-  border: 1px solid black;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  background-color: white;
-}
-.third-alarm-bottom-first-bottom {
-  /* border: 1px solid black; */
-  margin-top: 5px;
-}
-.third-alarm-bottom-first-bottom-top {
-  border: 1px solid black;
-  margin-bottom: 5px;
-  background-color: white;
-}
-.third-alarm-bottom-first-bottom-bottom {
-  border: 1px solid black;
-  margin-top: 5px;
-  background-color: white;
-}
-.third-alarm-bottom-second {
-  /* border: 1px solid black; */
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.third-alarm-bottom-second-top {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-bottom: 5px;
-}
-.third-alarm-bottom-second-middle {
-  border: 1px solid black;
-  margin-bottom: 5px;
-  background-color: yellow;
-  margin-top: 5px;
-}
-.third-alarm-bottom-second-bottom {
-  background-color: limegreen;
-  border: 1px solid black;
-  margin-top: 5px;
-}
-.third-alarm-bottom-third {
-  /* border: 1px solid black; */
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.third-alarm-bottom-third-top {
-  background-color: limegreen;
-  border: 1px solid black;
-  margin-bottom: 5px;
-}
-.third-alarm-bottom-third-middle {
-  background-color: limegreen;
-  border: 1px solid black;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.third-alarm-bottom-third-bottom {
-  background-color: limegreen;
-  border: 1px solid black;
-  margin-top: 5px;
-}
-.third-alarm-bottom-fourth {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.third-alarm-bottom-fifth {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: grey;
-}
 .container-first {
   border: 1px solid black;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: limegreen;
+  padding-bottom: 60px;
+  background-color: white;
   text-align: center;
+}
+.text-container-first {
+  margin-top: 55px;
 }
 .grid-container-second {
   /* border: 1px solid black; */
@@ -442,11 +387,18 @@ p {
   background-color: white;
   text-align: center;
 }
+.text-second-one {
+  margin-top: 80px;
+}
 .second-two {
   border: 1px solid black;
   margin-left: 5px;
-  background-color: limegreen;
+  padding-bottom: 90px;
+  background-color: #c8e6c9;
   text-align: center;
+}
+.text-second-two {
+  margin-top: 80px;
 }
 .grid-container-third {
   /* border: 1px solid black; */
@@ -462,8 +414,12 @@ p {
 .third-one {
   border: 1px solid black;
   margin-right: 5px;
+  padding-bottom: 90px;
   background-color: white;
   text-align: center;
+}
+.text-third-one {
+  margin-top: 90px;
 }
 .third-two {
   /* border: 1px solid black; */
@@ -472,14 +428,22 @@ p {
 .container-third-two-top {
   border: 1px solid black;
   margin-bottom: 5px;
-  background-color: limegreen;
+  padding-bottom: 20px;
+  background-color: #c8e6c9;
   text-align: center;
+}
+.text-third-two-top {
+  margin-top: 20px;
 }
 .container-third-two-bottom {
   border: 1px solid black;
   margin-top: 5px;
-  background-color: limegreen;
+  padding-bottom: 60px;
+  background-color: #c8e6c9;
   text-align: center;
+}
+.text-third-two-bottom {
+  margin-top: 60px;
 }
 .container-second-alarm-first {
   /* border: 1px solid black; */
@@ -498,128 +462,76 @@ p {
   grid-template-rows: auto auto;
   grid-template-areas: "first" "second";
 }
-.container-second-alarm-third {
-  /* border: 1px solid black; */
-  margin-top: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "first" "second";
-}
-.container-second-alarm-third-first {
-  /* border: 1px solid black; */
-  margin-right: 5px;
-}
-.container-second-alarm-third-first-top {
-  /* border: 1px solid black; */
-  margin-bottom: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "first" "second";
-}
-.container-second-alarm-third-first-top-first {
-  border: 1px solid black;
-  margin-right: 5px;
-  background-color: limegreen;
-}
-.container-second-alarm-third-first-top-second {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-left: 5px;
-}
-.container-second-alarm-third-first-bottom {
-  /* border: 1px solid black; */
-  margin-top: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "first" "second" "third";
-}
-.container-second-alarm-third-first-bottom-first {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-right: 5px;
-}
-.container-second-alarm-third-first-bottom-second {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.container-second-alarm-third-first-bottom-third {
-  border: 1px solid black;
-  margin-left: 5px;
-  background-color: white;
-}
-.container-second-alarm-third-second {
-  /* border: 1px solid black; */
-  margin-left: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "first" "second";
-}
-.container-second-alarm-third-second-second {
-  /* border: 1px solid black; */
-  margin-left: 5px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "first" "second";
-}
-.container-second-alarm-third-second-second-first {
-  /* border: 1px solid black; */
-  margin-right: 5px;
-}
-.container-second-alarm-third-second-second-first-top {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-bottom: 5px;
-}
-.container-second-alarm-third-second-second-first-bottom {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-top: 5px;
-}
-.container-second-alarm-third-second-second-second {
-  /* border: 1px solid black; */
-  margin-left: 5px;
-}
-.container-second-alarm-third-second-second-second-top {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-bottom: 5px;
-}
-.container-second-alarm-third-second-second-second-bottom {
-  border: 1px solid black;
-  background-color: limegreen;
-  margin-top: 5px;
-}
 .container-second-alarm-first-one {
   border: 1px solid black;
   margin-right: 5px;
-  background-color: limegreen;
+  padding-bottom: 60px;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.text-container-second-alarm-first-one {
+  margin-top: 55px;
 }
 .container-second-alarm-first-two {
   border: 1px solid black;
   margin-left: 5px;
-  background-color: limegreen;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.text-container-second-alarm-first-two {
+  margin-top: 40px;
 }
 .container-second-alarm-first-three {
   border: 1px solid black;
   margin-left: 5px;
   background-color: white;
+  text-align: center;
 }
-.container-second-alarm-second-one {
-  border: 1px solid black;
+.text-container-second-alarm-first-three {
+  margin-top: 50px;
+}
+.grid-container-second-alarm-second-one {
+  /* border: 1px solid black; */
   margin-right: 5px;
-  background-color: limegreen;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+}
+.grid-container-second-alarm-second-one-first {
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  margin-right: 5px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.grid-container-second-alarm-second-one-first-text {
+  margin-top: 85px;
+}
+.grid-container-second-alarm-second-two-second {
+  /* border: 1px solid black; */
+  margin-left: 5px;
+}
+.grid-container-second-alarm-second-two-second-top {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  background-color: white;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.grid-container-second-alarm-second-two-second-top-text {
+  margin-top: 20px;
+}
+.grid-container-second-alarm-second-two-second-bottom {
+  border: 1px solid black;
+  margin-top: 5px;
+  background-color: #c8e6c9;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.grid-container-second-alarm-second-two-second-bottom-text {
+  margin-top: 45px;
 }
 .container-second-alarm-second-two {
   /* border: 1px solid black; */
@@ -636,12 +548,280 @@ p {
 }
 .container-second-alarm-second-two-bottom {
   border: 1px solid black;
-  background-color: limegreen;
+  background-color: white;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.text-container-second-alarm-second-two-bottom {
+  margin-top: 17px;
+}
+.container-second-alarm-third {
+  /* border: 1px solid black; */
+  margin-top: 5px;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "first" "second" "third" "fourth";
+}
+.container-second-alarm-third-first-top {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #c8e6c9;
+}
+.container-second-alarm-third-first-top-text {
+  margin-top: 20px;
+}
+.container-second-alarm-third-first-bottom {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.container-second-alarm-third-first-bottom-text {
+  margin-top: 60px;
+}
+.container-second-alarm-third-second-top {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.container-second-alarm-third-second-top-text {
+  margin-top: 20px;
+}
+.container-second-alarm-third-second-bottom {
+  /* border: 1px solid black; */
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+}
+.container-second-alarm-third-second-bottom-first {
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  margin-right: 5px;
+  padding-bottom: 51px;
+  text-align: center;
+}
+.container-second-alarm-third-second-bottom-first-text {
+  margin-top: 50px;
+}
+.container-second-alarm-third-second-bottom-second {
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 5px;
+}
+.container-second-alarm-third-second-bottom-second-text {
+  margin-top: 50px;
+}
+.container-second-alarm-third-third-top {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.container-second-alarm-third-third-top-text {
+  margin-top: 40px;
+}
+.container-second-alarm-third-third-middle {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.container-second-alarm-third-third-middle-text {
+  margin-top: 4px;
+}
+.container-second-alarm-third-third-bottom {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.container-second-alarm-third-third-bottom-text {
+  margin-top: 2px;
+}
+.container-second-alarm-third-fourth-top {
+  border: 1px solid black;
+  margin-left: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.container-second-alarm-third-fourth-top-text {
+  margin-top: 55px;
+}
+.container-second-alarm-third-fourth-bottom {
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  padding-bottom: 29px;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.container-second-alarm-third-fourth-bottom-text {
+  margin-top: 25px;
+}
+.third-alarm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+  margin: 5px;
+}
+.third-alarm-first-top {
+  /* border: 1px solid black; */
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+}
+.third-alarm-first-top-first {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.third-alarm-first-top-first-text {
+  margin-top: 60px;
+}
+.third-alarm-first-top-second {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 50px;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.third-alarm-first-top-second-text {
+  margin-top: 55px;
+}
+.third-alarm-first-bottom-top-top {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "first" "second" "third";
+}
+.third-alarm-first-bottom-top-top-first {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.third-alarm-first-bottom-top-top-first-text {
+  margin-top: 50px;
+}
+.third-alarm-first-bottom-top-top-second {
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.third-alarm-first-bottom-top-top-second-text {
+  margin-top: 50px;
+}
+.third-alarm-first-bottom-top-top-third {
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.third-alarm-first-bottom-top-top-third-text {
+  margin-top: 50px;
+}
+.third-alarm-first-bottom-top-bottom {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "first" "second" "third";
+}
+.third-alarm-first-bottom-top-bottom-first {
+  border: 1px solid black;
+  margin-right: 5px;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.third-alarm-first-bottom-top-bottom-first-text {
+  margin-top: 20px;
+}
+.third-alarm-first-bottom-top-bottom-second {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #c8e6c9;
+}
+.third-alarm-first-bottom-top-bottom-second-text {
+  margin-top: 30px;
+}
+.third-alarm-first-bottom-top-bottom-third {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #c8e6c9;
+}
+.third-alarm-first-bottom-top-bottom-third-text {
+  margin-top: 30px;
+}
+.third-alarm-first-bottom-bottom {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "first" "second" "third";
+}
+.third-alarm-first-bottom-bottom-first-top {
+  margin-top: 5px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 .container-second-alarm-second-two-top-first {
   border: 1px solid black;
   margin-right: 3px;
   background-color: white;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.text-container-second-alarm-second-two-top-first {
+  margin-top: 50px;
 }
 .container-second-alarm-second-two-top-second {
   /* border: 1px solid black; */
@@ -651,9 +831,19 @@ p {
   border: 1px solid black;
   margin-bottom: 5px;
   background-color: white;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.text-container-second-alarm-second-two-top-second-top {
+  margin-top: 20px;
 }
 .container-second-alarm-second-two-top-second-bottom {
   border: 1px solid black;
   background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.text-container-second-alarm-second-two-top-second-bottom {
+  margin-top: 5px;
 }
 </style>
