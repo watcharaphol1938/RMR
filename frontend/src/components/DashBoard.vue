@@ -241,7 +241,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .factory {
   font-size: 30px;
   font-weight: bolder;
