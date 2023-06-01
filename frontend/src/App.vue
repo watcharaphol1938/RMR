@@ -1,33 +1,26 @@
 <template>
   <div>
-    <DashBoard class="dashboard"></DashBoard>
-    <TableValue></TableValue>
+    <HeadDashBoard></HeadDashBoard>
   </div>
 </template>
 
 <script>
-import DashBoard from './components/DashBoard.vue';
-import TableValue from './components/TableValue.vue';
+import HeadDashBoard from "./components/test/HeadDashBoard.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    DashBoard, TableValue
-  }
-}
+    HeadDashBoard,
+  },
+};
 </script>
 
 <style>
-/* @import "~@/assets/scss/vendors/bootstrap-vue/index"; */
-/* #app {
+*/ #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-} */
-.dashboard {
-  margin-bottom: 30px;
-  margin-top: 10px;
 }
 </style>
