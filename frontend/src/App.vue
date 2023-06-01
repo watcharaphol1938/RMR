@@ -1,15 +1,21 @@
 <template>
   <div>
+    <!-- <DashBoard />
+    <TableValue /> -->
     <HeadDashBoard></HeadDashBoard>
   </div>
 </template>
 
 <script>
 import HeadDashBoard from "./components/test/HeadDashBoard.vue";
+// import DashBoard from "./components/DashBoard.vue";
+// import TableValue from "./components/TableValue.vue";
 export default {
   name: "App",
   components: {
     HeadDashBoard,
+    // DashBoard,
+    // TableValue,
   },
 };
 </script>
