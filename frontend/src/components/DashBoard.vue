@@ -5,7 +5,7 @@
         <div class="page-name">
           <p class="factory">DNKH Factory</p>
           <p class="production">Production Efficiency</p>
-          <p>Date : {{ currentDate() }}</p>
+          <p>Date : {{ currentDateTime }}</p>
         </div>
         <div class="grid-sign">
           <div class="normal-sign"><h3 class="text-normal">Normal</h3></div>
@@ -229,15 +229,27 @@
 <script>
 export default {
   name: "DashBoard",
-  methods: {
-    currentDate() {
-      const current = new Date();
-      const date = `${current.getDate()}/${
-        current.getMonth() + 1
-      }/${current.getFullYear()}, ${current.toLocaleTimeString()}`;
-      return date;
-    },
+  data() {
+    return {
+      currentDateTime: null,
+    };
   },
+  mounted() {
+    setInterval(() => {
+      const date = new Date();
+      this.currentDateTime = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.toLocaleTimeString()}`;
+      // const date = `${this.currentDateTime.getDate()}/${this.currentDateTime.getMonth()}/${this.currentDateTime.getFullYear()}, ${this.currentDateTime.toLocaleTimeString()}`
+    }, 1000);
+  },
+  // methods: {
+  //   currentDate() {
+  //     const current = new Date();
+  //     const date = `${current.getDate()}/${
+  //       current.getMonth() + 1
+  //     }/${current.getFullYear()}, ${current.toLocaleTimeString()}`;
+  //     return date;
+  //   },
+  // },
 };
 </script>
 
