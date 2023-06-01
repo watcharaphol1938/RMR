@@ -184,14 +184,40 @@
                       <div class="third-alarm-first-bottom-bottom-first-top">
                         <div class="third-alarm-first-bottom-bottom-first-top-text">Rest Area</div>
                       </div>
-                      <div class="third-alarm-first-bottom-bottom-first-bottom">2</div>
+                      <div class="third-alarm-first-bottom-bottom-first-bottom">
+                        <div class="third-alarm-first-bottom-bottom-first-bottom-text">TL</div>
+                      </div>
                     </div>
-                    <div class="third-alarm-first-bottom-bottom-second">2</div>
-                    <div class="third-alarm-first-bottom-bottom-third">3</div>
+                    <div class="third-alarm-first-bottom-bottom-second">
+                      <div class="third-alarm-first-bottom-bottom-second-text">Rad. Assy 4</div>
+                    </div>
+                    <div class="third-alarm-first-bottom-bottom-third">
+                      <div class="third-alarm-first-bottom-bottom-third-text">Rad. Assy 6</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="third-alarm-second">2</div>
+              <div class="third-alarm-second">
+                <div class="third-alarm-second-top">
+                  <div class="third-alarm-second-top-first">
+                    <div class="third-alarm-second-top-first-text">Rad. Injections</div>
+                  </div>
+                  <div class="third-alarm-second-top-second">
+                    <div class="third-alarm-second-top-second-text">JMD Injections Die</div>
+                  </div>
+                  <div class="third-alarm-second-top-third">
+                    <div class="third-alarm-second-top-third-text">JMD</div>
+                  </div>
+                </div>
+                <div class="third-alarm-second-bottom">
+                  <div class="third-alarm-second-bottom-first">
+                    <div class="third-alarm-second-bottom-first-text">Rad. Brazing</div>
+                  </div>
+                  <div class="third-alarm-second-bottom-second">
+                    <div class="third-alarm-second-bottom-second-text">Future Area</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -354,10 +380,12 @@ p {
 .grid-first-alarm {
   /* border: 1px solid black; */
   margin: 5px;
+  margin-right: 10px;
 }
 .second-alarm {
   /* border: 1px solid black; */
   margin: 5px;
+  margin-right: 10px;
 }
 .container-first {
   border: 1px solid black;
@@ -685,7 +713,7 @@ p {
 }
 .third-alarm {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.6fr;
   grid-template-rows: auto auto;
   grid-template-areas: "first" "second";
   margin: 5px;
@@ -706,7 +734,7 @@ p {
   margin-bottom: 5px;
   background-color: #c8e6c9;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .third-alarm-first-top-first-text {
   margin-top: 60px;
@@ -715,12 +743,12 @@ p {
   border: 1px solid black;
   margin-right: 5px;
   margin-bottom: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   background-color: #c8e6c9;
   text-align: center;
 }
 .third-alarm-first-top-second-text {
-  margin-top: 55px;
+  margin-top: 50px;
 }
 .third-alarm-first-bottom-top-top {
   display: grid;
@@ -730,7 +758,7 @@ p {
 }
 .third-alarm-first-bottom-top-top-first {
   border: 1px solid black;
-  margin-right: 5px;
+  margin-right: 0px;
   margin-bottom: 5px;
   background-color: white;
   text-align: center;
@@ -771,7 +799,7 @@ p {
 }
 .third-alarm-first-bottom-top-bottom-first {
   border: 1px solid black;
-  margin-right: 5px;
+  /* margin-right: 5px; */
   background-color: white;
   text-align: center;
   padding-bottom: 20px;
@@ -810,8 +838,108 @@ p {
 .third-alarm-first-bottom-bottom-first-top {
   margin-top: 5px;
   border: 1px solid black;
+  background-color: white;
   margin-bottom: 5px;
+  margin-right: 0px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.third-alarm-first-bottom-bottom-first-top-text {
+  margin-top: 25px;
+}
+.third-alarm-first-bottom-bottom-first-bottom {
+  margin-top: 5px;
+  margin-right: 0px;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.third-alarm-first-bottom-bottom-first-bottom-text {
+  margin-top: 30px;
+}
+.third-alarm-first-bottom-bottom-second {
+  margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.third-alarm-first-bottom-bottom-second-text {
+  margin-top: 70px;
+}
+.third-alarm-first-bottom-bottom-third {
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.third-alarm-first-bottom-bottom-third-text {
+  margin-top: 70px;
+}
+.third-alarm-second-top {
+  display: grid;
+  grid-template-columns: 8fr 4fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "first" "second" "third";
+}
+.third-alarm-second-top-first {
+  margin-right: 10px;
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  text-align: center;
+  padding-bottom: 62px;
+}
+.third-alarm-second-top-first-text {
+  margin-top: 60px;
+}
+.third-alarm-second-top-second {
+  margin-right: 10px;
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.third-alarm-second-top-second-text {
+  margin-top: 55px;
+}
+.third-alarm-second-top-third {
+  margin-right: 5px;
+  border: 1px solid black;
+  background-color: #c8e6c9;
+  text-align: center;
+}
+.third-alarm-second-top-third-text {
+  margin-top: 60px;
+}
+.third-alarm-second-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+  margin-top: 10px;
+}
+.third-alarm-second-bottom-first {
+  border: 1px solid black;
+  margin-right: 5px;
+  text-align: center;
+  background-color: #c8e6c9;
+  padding-bottom: 175px;
+}
+.third-alarm-second-bottom-first-text {
+  margin-top: 190px;
+}
+.third-alarm-second-bottom-second {
+  border: 1px solid black;
+  margin-right: 5px;
+  text-align: center;
+  background-color: #bdbdbd;
+  padding-bottom: 175px;
+}
+.third-alarm-second-bottom-second-text {
+  margin-top: 190px;
 }
 .container-second-alarm-second-two-top-first {
   border: 1px solid black;
