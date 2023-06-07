@@ -263,6 +263,10 @@
               </div>
             </div>
           </div>
+          <div class="bottom-area">
+            <div class="bottom-area-first">1</div>
+            <div class="bottom-area-second">W/H DNKH</div>
+          </div>
         </div>
       </div>
     </div>
@@ -1459,5 +1463,26 @@ p {
   padding: 15px;
   margin-right: 5px;
   margin-left: 5px;
+}
+.bottom-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "first" "second";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.bottom-area-first {
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.bottom-area-second {
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
 }
 </style>
