@@ -265,6 +265,7 @@ export default {
 .container {
   background-color: white;
   border: 2px solid black;
+  margin-bottom: 10px;
 }
 .grid {
   display: grid;
