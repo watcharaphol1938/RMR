@@ -4,7 +4,6 @@
     <TableValue></TableValue>
   </div>
 </template>
-
 <script>
 import DashBoard from "./components/DashBoard.vue";
 import TableValue from "./components/TableValue.vue";

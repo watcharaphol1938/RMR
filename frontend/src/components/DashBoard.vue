@@ -36,10 +36,13 @@
                   <div class="text-second-one">SRKH</div>
                   <div class="text-second-one-value"></div>
                 </div>
-                <div class="second-two">
+                <Tooltip title="Test" arrow>
+                  <div class="second-two">
                   <div class="text-second-two">Tube S/A</div>
                   <div class="text-second-two-value"></div>
                 </div>
+                </Tooltip>
+                
               </div>
               <div class="grid-container-third">
                 <div class="third-one">
@@ -707,6 +710,7 @@ p {
   padding-bottom: 90px;
   background-color: #c8e6c9;
   text-align: center;
+  position: relative;
 }
 .text-second-two {
   margin-top: 80px;
@@ -735,12 +739,12 @@ p {
 .third-one {
   border: 1px solid black;
   margin-right: 5px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   background-color: white;
   text-align: center;
 }
 .text-third-one {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 .text-third-one-value {
   display: grid;
@@ -779,12 +783,12 @@ p {
 .container-third-two-bottom {
   border: 1px solid black;
   margin-top: 5px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: #c8e6c9;
   text-align: center;
 }
 .text-third-two-bottom {
-  margin-top: 60px;
+  margin-top: 35px;
 }
 .text-third-two-bottom-value {
   display: grid;
@@ -1012,10 +1016,10 @@ p {
   margin-top: 5px;
   background-color: #c8e6c9;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .container-second-alarm-third-first-bottom-text {
-  margin-top: 60px;
+  margin-top: 35px;
 }
 .container-second-alarm-third-first-bottom-text-value {
   display: grid;
@@ -1063,11 +1067,11 @@ p {
   border: 1px solid black;
   background-color: #c8e6c9;
   margin-right: 5px;
-  padding-bottom: 51px;
+  padding-bottom: 30px;
   text-align: center;
 }
 .container-second-alarm-third-second-bottom-first-text {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .container-second-alarm-third-second-bottom-first-text-value {
   display: grid;
@@ -1086,7 +1090,7 @@ p {
   text-align: center;
 }
 .container-second-alarm-third-second-bottom-second-text {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .container-second-alarm-third-second-bottom-second-text-value {
   display: grid;
@@ -1104,10 +1108,10 @@ p {
   margin-right: 5px;
   background-color: #c8e6c9;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .container-second-alarm-third-third-top-text {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .container-second-alarm-third-third-top-text-value {
   display: grid;
@@ -1130,7 +1134,8 @@ p {
   margin-bottom: 5px;
 }
 .container-second-alarm-third-third-middle-text {
-  margin-top: 4px;
+  margin-top: 0px;
+  font-size: 13px;
 }
 .container-second-alarm-third-third-middle-text-value {
   display: grid;
@@ -1138,7 +1143,7 @@ p {
   grid-template-rows: auto;
   grid-template-areas: "coilup";
   background-color: lightgray;
-  padding: 15px;
+  padding: 10px;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -1152,7 +1157,8 @@ p {
   padding-bottom: 5px;
 }
 .container-second-alarm-third-third-bottom-text {
-  margin-top: 2px;
+  margin-top: 0px;
+  font-size: 13px;
 }
 .container-second-alarm-third-third-bottom-text-value {
   display: grid;
@@ -1160,7 +1166,7 @@ p {
   grid-template-rows: auto;
   grid-template-areas: "coilup";
   background-color: lightgray;
-  padding: 15px;
+  padding: 10px;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -1169,10 +1175,10 @@ p {
   margin-left: 5px;
   background-color: #c8e6c9;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .container-second-alarm-third-fourth-top-text {
-  margin-top: 55px;
+  margin-top: 25px;
 }
 .container-second-alarm-third-fourth-top-text-value {
   display: grid;
@@ -1187,13 +1193,13 @@ p {
 .container-second-alarm-third-fourth-bottom {
   border: 1px solid black;
   background-color: #c8e6c9;
-  padding-bottom: 29px;
+  padding-bottom: 10px;
   text-align: center;
   margin-left: 5px;
   margin-top: 5px;
 }
 .container-second-alarm-third-fourth-bottom-text {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .container-second-alarm-third-fourth-bottom-text-value {
   display: grid;
@@ -1272,11 +1278,10 @@ p {
 }
 .third-alarm-first-bottom-top-top-first {
   border: 1px solid black;
-  margin-right: 0px;
   margin-bottom: 5px;
   background-color: white;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 42px;
 }
 .third-alarm-first-bottom-top-top-first-text {
   margin-top: 50px;
@@ -1343,13 +1348,12 @@ p {
 }
 .third-alarm-first-bottom-top-bottom-first {
   border: 1px solid black;
-  /* margin-right: 5px; */
   background-color: white;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: -5px;
 }
 .third-alarm-first-bottom-top-bottom-first-text {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .third-alarm-first-bottom-top-bottom-first-text-value {
   display: grid;
@@ -1414,12 +1418,11 @@ p {
   border: 1px solid black;
   background-color: white;
   margin-bottom: 5px;
-  margin-right: 0px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 .third-alarm-first-bottom-bottom-first-top-text {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .third-alarm-first-bottom-bottom-first-top-text-value {
   display: grid;
@@ -1437,10 +1440,10 @@ p {
   border: 1px solid black;
   background-color: white;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .third-alarm-first-bottom-bottom-first-bottom-text {
-  margin-top: 30px;
+  margin-top: 12px;
 }
 .third-alarm-first-bottom-bottom-first-bottom-text-value {
   display: grid;
@@ -1461,7 +1464,7 @@ p {
   text-align: center;
 }
 .third-alarm-first-bottom-bottom-second-text {
-  margin-top: 70px;
+  margin-top: 55px;
 }
 .third-alarm-first-bottom-bottom-second-text-value {
   display: grid;
@@ -1482,7 +1485,7 @@ p {
   text-align: center;
 }
 .third-alarm-first-bottom-bottom-third-text {
-  margin-top: 70px;
+  margin-top: 55px;
 }
 .third-alarm-first-bottom-bottom-third-text-value {
   display: grid;
@@ -1698,18 +1701,20 @@ p {
 .bottom-area-first-second {
   border: 1px solid black;
   background-color: white;
+  font-size: 12px;
   text-align: center;
 }
 .bottom-area-first-second-text {
-  margin-top: -15px;
+  margin-top: -10px;
 }
 .bottom-area-first-third {
   border: 1px solid black;
   background-color: white;
+  font-size: 12px;
   text-align: center;
 }
 .bottom-area-first-third-text {
-  margin-top: -15px;
+  margin-top: -10px;
 }
 .bottom-area-second {
   border: 1px solid black;
@@ -1717,9 +1722,36 @@ p {
   margin-right: 5px;
   margin-left: 5px;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 .bottom-area-second-text {
-  margin-top: -15px;
+  margin-top: -10px;
+}
+.tooltipText {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  background-color: aqua;
+  color: black;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tooltipText::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  border: 15px solid;
+}
+.tooltip:hover .tooltipText {
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
 }
 </style>
