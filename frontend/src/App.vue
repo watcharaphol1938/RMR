@@ -1,20 +1,51 @@
 <template>
   <div>
-    <DashBoard></DashBoard>
-    <TableValue></TableValue>
+    <div class="container">
+      <div class="container-header">
+        <TitleHeaderDashBoard></TitleHeaderDashBoard>
+        <SignHeaderDashBoard></SignHeaderDashBoard>
+        <ResultHeaderDashBoard></ResultHeaderDashBoard>
+      </div>
+      <ProductionLine></ProductionLine>
+    </div>
+    <div class="table">
+      <TableValue></TableValue>
+    </div>
+    <!-- <DashBoard></DashBoard> -->
   </div>
 </template>
 <script>
-import DashBoard from "./components/DashBoard.vue";
+import TitleHeaderDashBoard from "./components/TitleHeaderDashBoard.vue";
+import SignHeaderDashBoard from "./components/SignHeaderDashBoard.vue";
+import ResultHeaderDashBoard from "./components/ResultHeaderDashBoard.vue";
+import ProductionLine from "./components/ProductionLine.vue";
 import TableValue from "./components/TableValue.vue";
+// import DashBoard from "./components/DashBoard.vue";
 export default {
   name: "App",
   components: {
-    DashBoard,
-    TableValue,
+    TitleHeaderDashBoard,
+    SignHeaderDashBoard,
+    ResultHeaderDashBoard,
+    ProductionLine,
+    TableValue
+    // DashBoard
   },
 };
 </script>
 
 <style scoped>
+.container-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "Title" "Sign" "Result";
+
+  
+}
+.container {
+  background-color: white;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
 </style>
