@@ -36,12 +36,10 @@
                   <div class="text-second-one">SRKH</div>
                   <div class="text-second-one-value"></div>
                 </div>
-                <Tooltip title="Test" arrow>
-                  <div class="second-two">
+                <div class="second-two" data-tooltip="Test Tooltip">
                   <div class="text-second-two">Tube S/A</div>
                   <div class="text-second-two-value"></div>
                 </div>
-                </Tooltip>
                 
               </div>
               <div class="grid-container-third">
@@ -712,6 +710,7 @@ p {
   text-align: center;
   position: relative;
 }
+
 .text-second-two {
   margin-top: 80px;
 }
