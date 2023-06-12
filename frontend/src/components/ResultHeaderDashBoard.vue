@@ -21,11 +21,6 @@ export default {
 
 <style scoped>
 .result {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "value" "symbol";
-
   border: 2px solid limegreen;
   border-radius: 10px;
 
@@ -41,26 +36,19 @@ export default {
 .symbol {
   text-align: center;
 }
-.symbol-result {
-  margin-top: 35%;
-  border: 2px solid limegreen;
-  margin-right: 15%;
-  margin-left: 0%;
-
-  font-size: 170%;
-}
 hr {
-    border: 1px solid limegreen;
-    margin-top: -13%;
+  margin-right: 32%;
+  border: 1px solid limegreen;
 }
-.operation-ratio {
+p {
   font-family: Arial;
-  font-size: 150%;
-  margin-top: 1%;
 }
-.target {
-  font-family: Arial;
-  font-size: 150%;
-  margin-top: -5%;
+.symbol-result {
+  margin-left: 70%;
+  margin-right: 5%;
+  margin-top: -35%;
+  border: 1px solid limegreen;
+  font-size: 30px;
+  color: limegreen;
 }
 </style>
