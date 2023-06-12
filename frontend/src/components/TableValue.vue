@@ -29,11 +29,11 @@
           <td>91.1%</td>
           <td>91.2%</td>
           <td>0.1%</td>
-          <td>0</td>
+          <td>O</td>
           <td>91.1%</td>
           <td>91.3%</td>
           <td>0.2%</td>
-          <td>0</td>
+          <td>O</td>
           <td class="fourth-column">
             <div class="first-row-value">91.1%</div>
           </td>
@@ -53,11 +53,11 @@
           <td>91.1%</td>
           <td>91.6%</td>
           <td>0.5%</td>
-          <td>0</td>
+          <td>O</td>
           <td>91.1%</td>
           <td>91.5%</td>
           <td>0.4%</td>
-          <td>0</td>
+          <td>O</td>
           <td class="fourth-column">
             <div class="second-row-value">91.1%</div>
           </td>
@@ -76,11 +76,11 @@
           <td>91.1%</td>
           <td>92.7%</td>
           <td>1.6%</td>
-          <td>0</td>
+          <td>O</td>
           <td>91.1%</td>
           <td>91.8%</td>
           <td>0.7%</td>
-          <td>0</td>
+          <td>O</td>
           <td class="fourth-column">
             <div class="third-row-value">91.1%</div>
           </td>
@@ -96,12 +96,18 @@
         </tr>
       </table>
     </div>
+    <!-- <div v-for="data in myData" :key="data">{{ data }}</div> -->
   </div>
 </template>
 
 <script>
 export default {
   name: "TableValue",
+  data() {
+    return {
+      // myData: datatable
+    }
+  }
 };
 </script>
 
