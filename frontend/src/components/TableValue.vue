@@ -73,14 +73,30 @@
         </tr>
         <tr>
           <th>Radiator line #6</th>
-          <td>91.1%</td>
-          <td>92.7%</td>
-          <td>1.6%</td>
-          <td>O</td>
-          <td>91.1%</td>
-          <td>91.8%</td>
-          <td>0.7%</td>
-          <td>O</td>
+          <td>
+            91.1%
+          </td>
+          <td>
+            92.7%
+          </td>
+          <td>
+            1.6%
+          </td>
+          <td>
+            O
+          </td>
+          <td>
+            91.1%
+          </td>
+          <td>
+            91.8%
+          </td>
+          <td>
+            0.7%
+          </td>
+          <td>
+            O
+          </td>
           <td class="fourth-column">
             <div class="third-row-value">91.1%</div>
           </td>
@@ -101,12 +117,26 @@
 </template>
 
 <script>
+import { result } from '../mocks/datasourceTable';
 export default {
   name: "TableValue",
   data() {
     return {
-      // myData: datatable
+      myData: result
     }
+  },
+  methods: {
+    // processline() {
+    //   for (const key in result) {
+    //     for (const index in result[key].lastmonth) {
+    //       console.log("lastmonth actual: " + result[key].lastmonth[index].actual + " type: " + typeof(result[key].lastmonth[index].target));
+    //       console.log("sum: ");
+    //     }
+    //   }
+    // }
+  },
+  mounted() {
+    // this.processline()
   }
 };
 </script>

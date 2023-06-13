@@ -2,12 +2,12 @@
   <div>
     <div class="result">
       <div class="value">
-        <p class="operation-ratio">OR</p>
+        <span class="operation-ratio">OR</span>
         <hr />
-        <p class="target">Target</p>
+        <span class="target">Target</span>
       </div>
       <div class="symbol">
-        <p class="symbol-result">O</p>
+        <div class="symbol-result">O</div>
       </div>
     </div>
   </div>
@@ -21,34 +21,48 @@ export default {
 
 <style scoped>
 .result {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "value" "symbol";
+
   border: 2px solid limegreen;
   border-radius: 10px;
-
+  margin: 1%;
   margin-left: 50%;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.value {
-  margin-left: 5%;
-  margin-bottom: -20%;
-}
-.symbol {
-  text-align: center;
+
+  width: 45%;
+  height: 70%;
 }
 hr {
-  margin-right: 32%;
   border: 1px solid limegreen;
 }
-p {
+.value {
+  margin-left: 10%;
   font-family: Arial;
+
+  /* border: 1px solid limegreen; */
+
+  margin-top: 2%;
+}
+.symbol {
+  font-family: Arial;
+  text-align-last: center;
+
+  margin-top: 5%;
+
+  /* border: 1px solid black; */
+  width: 80%;
+
+  display:table-cell; 
+  vertical-align:middle;
 }
 .symbol-result {
-  margin-left: 70%;
-  margin-right: 5%;
-  margin-top: -35%;
+  font-size: 180%;
+
   border: 1px solid limegreen;
-  font-size: 30px;
   color: limegreen;
+
+  margin-top: 20%;
 }
 </style>
