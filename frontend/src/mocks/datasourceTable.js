@@ -1,50 +1,50 @@
-const result =[
-    {
-        "lineID": 1,
-        "lineName": "Magnato assy. Line#2",
-        "LastMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 91.2
-            }
-        ],
-        "AccumulateUntilLastMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 91.3
-            }
-        ],
-        "CurrentMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 91.9
-            }
-        ]
-    },
-    {
-        "lineID": 2,
-        "lineName": "Radiator line #6",
-        "LastMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 92.7
-            }
-        ],
-        "AccumulateUntilLastMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 91.5
-            }
-        ],
-        "CurrentMonth": [
-            {
-                "Target": 91.1,
-                "Actual": 89.5
-            }
-        ]
-    }
-]
+const result = [
+  {
+    lineid: 1,
+    linename: "Magnato assy. Line#2",
+    lastmonth: [
+      {
+        target: 91.1,
+        actual: 91.2,
+      },
+    ],
+    accumulatelastmonth: [
+      {
+        target: 91.1,
+        actual: 91.3,
+      },
+    ],
+    currentmonth: [
+      {
+        target: 91.1,
+        actual: 91.9,
+      },
+    ],
+  },
+  {
+    lineid: 2,
+    linename: "Radiator line #6",
+    lastmonth: [
+      {
+        target: 91.1,
+        actual: 92.7,
+      },
+    ],
+    accumulatelastmonth: [
+      {
+        target: 91.1,
+        actual: 91.5,
+      },
+    ],
+    currentmonth: [
+      {
+        target: 91.1,
+        actual: 89.5,
+      },
+    ],
+  },
+];
 
-module.exports={
-    result
-}
+module.exports = {
+  result
+};
