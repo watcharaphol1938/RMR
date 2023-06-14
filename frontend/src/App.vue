@@ -9,19 +9,19 @@
       <ProductionLine></ProductionLine>
     </div>
     <div class="table">
-      <!-- <TableValue></TableValue> -->
+      <TableValue></TableValue>
     </div>
-    <!-- <ExampleTable></ExampleTable> -->
+    <ExampleTable></ExampleTable>
     <!-- <DashBoard></DashBoard> -->
   </div>
 </template>
 <script>
-// import ExampleTable from "./components/ExampleTable.vue";
+import ExampleTable from "./components/ExampleTable.vue";
 import TitleHeaderDashBoard from "./components/TitleHeaderDashBoard.vue";
 import SignHeaderDashBoard from "./components/SignHeaderDashBoard.vue";
 import ResultHeaderDashBoard from "./components/ResultHeaderDashBoard.vue";
 import ProductionLine from "./components/ProductionLine.vue";
-// import TableValue from "./components/TableValue.vue";
+import TableValue from "./components/TableValue.vue";
 // import DashBoard from "./components/DashBoard.vue";
 export default {
   name: "App",
@@ -30,8 +30,8 @@ export default {
     SignHeaderDashBoard,
     ResultHeaderDashBoard,
     ProductionLine,
-    // TableValue,
-    // ExampleTable
+    TableValue,
+    ExampleTable
     // DashBoard
   },
 };
@@ -49,7 +49,6 @@ export default {
 .container {
   background-color: white;
   border: 2px solid black;
-  margin-bottom: 10px;
 }
 .table {
   margin-bottom: 10px;
