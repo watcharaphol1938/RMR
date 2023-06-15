@@ -11,12 +11,12 @@
     <div class="table">
       <TableValue></TableValue>
     </div>
-    <ExampleTable></ExampleTable>
+    <!-- <ExampleTable></ExampleTable> -->
     <!-- <DashBoard></DashBoard> -->
   </div>
 </template>
 <script>
-import ExampleTable from "./components/ExampleTable.vue";
+// import ExampleTable from "./components/ExampleTable.vue";
 import TitleHeaderDashBoard from "./components/TitleHeaderDashBoard.vue";
 import SignHeaderDashBoard from "./components/SignHeaderDashBoard.vue";
 import ResultHeaderDashBoard from "./components/ResultHeaderDashBoard.vue";
@@ -31,7 +31,7 @@ export default {
     ResultHeaderDashBoard,
     ProductionLine,
     TableValue,
-    ExampleTable
+    // ExampleTable
     // DashBoard
   },
 };
