@@ -28,21 +28,23 @@ export default {
 <style scoped>
 .title {
   margin-left: 1%;
+  position: relative;
 }
 .factory {
   font-family: Arial;
-  font-size: 150%;
   margin-top: 5px;
-  font-weight: bold;
+
+  font-weight: bolder;
+  font-size: 1.5vw;
 }
 .production {
   font-family: Arial;
-  font-size: 110%;
-  margin-top: -15px;
+  font-size: 1.3vw;
+  margin-top: -2%;
 }
 .date {
   font-family: Arial;
-  font-size: 95%;
-  margin-top: -15px;
+  font-size: 1.1vw;
+  margin-top: -3%;
 }
 </style>

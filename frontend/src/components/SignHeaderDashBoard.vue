@@ -28,6 +28,7 @@ export default {
   grid-template-areas: "normal" "warning" "abnormal";
 
   text-align: center;
+  margin-top: 5%;
 }
 .normal {
     background-color: limegreen;
@@ -36,16 +37,16 @@ export default {
     border: 1px solid black;
 
     font-family: Arial;
-    font-size: 120%;
+    font-size: 1vw;
 }
 .warning {
-    background-color: yellow;
+    background-color: orange;
     margin-left: 20%;
     margin-right: 20%;
     border: 1px solid black;
 
     font-family: Arial;
-    font-size: 120%;
+    font-size: 1vw;
 }
 .abnormal {
     background-color: red;
@@ -54,6 +55,6 @@ export default {
     border: 1px solid black;
 
     font-family: Arial;
-    font-size: 120%;
+    font-size: 1vw;
 }
 </style>
