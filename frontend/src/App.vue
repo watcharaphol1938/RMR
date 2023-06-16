@@ -1,13 +1,11 @@
 <template>
   <div>
-    <div class="container">
-      <div class="container-header">
-        <TitleHeaderDashBoard></TitleHeaderDashBoard>
-        <SignHeaderDashBoard></SignHeaderDashBoard>
-        <ResultHeaderDashBoard></ResultHeaderDashBoard>
-      </div>
-      <ProductionLine></ProductionLine>
+    <div class="container-header">
+      <TitleHeaderDashBoard></TitleHeaderDashBoard>
+      <SignHeaderDashBoard></SignHeaderDashBoard>
+      <ResultHeaderDashBoard></ResultHeaderDashBoard>
     </div>
+    <ProductionLine></ProductionLine>
     <div class="table">
       <TableValue></TableValue>
     </div>
@@ -43,8 +41,6 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "Title" "Sign" "Result";
-
-  
 }
 .container {
   background-color: white;

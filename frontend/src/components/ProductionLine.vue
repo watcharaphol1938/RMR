@@ -52,7 +52,7 @@ export default {
 .container {
   background-color: white;
   border: 2px solid black;
-  margin: 5px;
+  margin: 2px;
 }
 .vue-grid-item {
   border: 1px solid black;
@@ -82,5 +82,8 @@ export default {
 }
 .white {
   background-color: white;
+}
+.orange {
+  background-color: orange;
 }
 </style>

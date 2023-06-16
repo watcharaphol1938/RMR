@@ -11,15 +11,93 @@
       </div>
     </div> -->
 
-
-    <div class="result" :style="{'border-color': orvalue() >= targetvalue() ? 'limegreen' : 'red'}">
+    <div
+      class="result"
+      :style="{
+        'border-color':
+          overall().targetvalue != parseFloat(overall().targetvalue)
+            ? 'black'
+            : overall().orvalue >= 90
+            ? 'limegreen'
+            : overall().orvalue >= 85 && overall().orvalue < 90
+            ? 'orange'
+            : overall().orvalue < 85 || overall().orvalue == null || overall().targetvalue != null
+            ? 'red'
+            : 'black',
+      }"
+    >
       <div class="value">
-        <div class="operation-ratio" :style="{'color': orvalue() >= targetvalue() ? 'limegreen' : 'red'}">OR {{ orvalue() }}%</div>
-        <hr :style="{'border-color': orvalue() >= targetvalue() ? 'limegreen' : 'red'}" />
-        <div class="target">Target {{ targetvalue() }}%</div>
+        <div
+          class="operation-ratio"
+          :style="{
+            color:
+              overall().targetvalue != parseFloat(overall().targetvalue)
+                ? ''
+                : overall().orvalue >= 90
+                ? 'limegreen'
+                : overall().orvalue >= 85 && overall().orvalue < 90
+                ? 'orange'
+                : overall().orvalue < 85 || overall().orvalue == null || overall().targetvalue != null
+                ? 'red'
+                : 'black',
+          }"
+        >
+          OR {{ overall().orvalue != parseFloat(overall().orvalue) || overall().targetvalue != parseFloat(overall().targetvalue) ? "" : overall().orvalue + "%" }}
+        </div>
+        <hr
+          :style="{
+            'border-color':
+              overall().targetvalue != parseFloat(overall().targetvalue) 
+                ? 'black'
+                : overall().orvalue >= 90
+                ? 'limegreen'
+                : overall().orvalue >= 85 && overall().orvalue < 90
+                ? 'orange'
+                : overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)
+                ? 'red'
+                : 'black',
+          }"
+        />
+        <div class="target">
+          Target
+          {{ overall().targetvalue != parseFloat(overall().targetvalue) ? "" : overall().targetvalue + "%" }}
+        </div>
       </div>
-      <div class="symbol">
-        <div class="symbol-result" :style="{'color': orvalue() >= targetvalue() ? 'limegreen' : 'red'}">{{ orvalue() >= targetvalue() ? 'O' : 'X' }}</div>
+      <div
+        class="symbol"
+        :style="{
+          'border-color':
+            overall().targetvalue != parseFloat(overall().targetvalue)
+              ? 'black'
+              : overall().orvalue >= 90
+              ? 'limegreen'
+              : overall().orvalue >= 85 && overall().orvalue < 90
+              ? 'orange'
+              : overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)
+              ? 'red'
+              : 'black',
+        }"
+      >
+        <div
+          class="symbol-result"
+          :style="{
+            color:
+              overall().targetvalue != parseFloat(overall().targetvalue)
+                ? ''
+                : overall().orvalue >= 90
+                ? 'limegreen'
+                : overall().orvalue >= 85 && overall().orvalue < 90
+                ? 'orange'
+                : overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)
+                ? 'red'
+                : '',
+          }"
+        >
+        <div v-if="overall().targetvalue == null || overall().targetvalue != parseFloat(overall().targetvalue)"></div>
+        <div v-else-if="overall().orvalue >= 90">O</div>
+        <div v-else-if="overall().orvalue >= 85 && overall().orvalue < 90">&#9651;</div>
+        <div v-else-if="overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)">X</div>
+        </div>
       </div>
     </div>
   </div>
@@ -31,31 +109,19 @@ export default {
   name: "ResultHeaderDashBoard",
   data() {
     return {
-      or: null,
-      target: null,
+      // or: null,
+      // target: null,
     };
   },
   methods: {
-    orvalue() {
+    overall: function () {
       for (const key in overall) {
-        console.log(key + " "+ overall[key].or + " " + typeof(overall[key].or) + " " + parseInt(overall.length - 3));
-        if (key == parseInt(overall.length - 1)) {
-          return overall[key].or;
-        }
+        // console.log(overall[key].or + " " + overall[key].target);
+        const orvalue = parseFloat(overall[key].or), targetvalue = parseFloat(overall[key].target);
+        return { orvalue, targetvalue };
       }
     },
-    targetvalue() {
-      for (const key in overall) {
-        console.log(key + " "+ overall[key].target + " " + typeof(overall[key].target)  + " " + parseInt(overall.length - 3));
-        if (key == parseInt(overall.length - 1)) {
-          return overall[key].target;
-        }
-      }
-    }
   },
-  mounted() {
-    this.orvalue(), this.targetvalue()
-  }
 };
 </script>
 
@@ -75,7 +141,7 @@ export default {
   height: 70%;
 }
 hr {
-  /* border: 1px solid limegreen; */
+  border: 1px solid;
   margin-top: 0%;
 }
 .value {
@@ -84,8 +150,6 @@ hr {
   font-family: Arial;
 
   height: 80%;
-
-  /* border: 1px solid limegreen; */
 
   position: relative;
 }
@@ -112,14 +176,5 @@ hr {
 .symbol-result {
   margin-top: 0%;
   font-size: 2vw;
-}
-.green {
-  color: limegreen;
-}
-.yellow {
-  color: yellow;
-}
-.red {
-  color: red;
 }
 </style>
