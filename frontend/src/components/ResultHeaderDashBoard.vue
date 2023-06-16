@@ -94,7 +94,7 @@
           }"
         >
         <div v-if="overall().targetvalue == null || overall().targetvalue != parseFloat(overall().targetvalue)"></div>
-        <div v-else-if="overall().orvalue >= 90">O</div>
+        <div v-else-if="overall().orvalue >= 91">O</div>
         <div v-else-if="overall().orvalue >= 85 && overall().orvalue < 90">&#9651;</div>
         <div v-else-if="overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)">X</div>
         </div>
