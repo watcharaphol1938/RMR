@@ -40,11 +40,11 @@ export default {
 .production {
   font-family: Arial;
   font-size: 1.3vw;
-  margin-top: -2%;
+  margin-top: -18px;
 }
 .date {
   font-family: Arial;
-  font-size: 1.1vw;
-  margin-top: -3%;
+  margin-top: -20px;
+  font-size: 1vw;
 }
 </style>
