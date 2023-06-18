@@ -78,7 +78,7 @@
               : 'black',
         }"
       >
-        <div
+        <!-- <div
           class="symbol-result"
           :style="{
             color:
@@ -97,7 +97,7 @@
         <div v-else-if="overall().orvalue >= 91">O</div>
         <div v-else-if="overall().orvalue >= 85 && overall().orvalue < 90">&#9651;</div>
         <div v-else-if="overall().orvalue < 85 || overall().orvalue != parseFloat(overall().orvalue)">X</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@ export default {
   border: 2px solid;
   border-radius: 10px;
   margin: 1%;
-  margin-left: 63%;
+  margin-left: 64%;
 
   width: 35%;
   height: 70%;
@@ -146,27 +146,25 @@ hr {
 }
 .value {
   margin-left: 5%;
-  margin-top: 4%;
+  margin-top: 3px;
   font-family: Arial;
-
-  height: 80%;
 
   position: relative;
 }
 .operation-ratio {
-  margin-top: 5%;
   font-size: 1.5vw;
   font-weight: bold;
 }
 .target {
   font-size: 1.2vw;
   position: absolute;
-  top: 2.1em;
+  top: 2em;
 }
 .symbol {
   font-family: Arial;
   text-align-last: center;
 
+  position: relative;
   margin-top: 45%;
 
   border: 1px solid;

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="container-header">
+    <div class="container-header m-2">
       <TitleHeaderDashBoard></TitleHeaderDashBoard>
       <SignHeaderDashBoard></SignHeaderDashBoard>
       <ResultHeaderDashBoard></ResultHeaderDashBoard>
     </div>
-    <ProductionLine></ProductionLine>
+    <!-- <ProductionLine></ProductionLine> -->
     <div class="table">
-      <TableValue></TableValue>
+      <!-- <TableValue></TableValue> -->
     </div>
     <!-- <ExampleTable></ExampleTable> -->
     <!-- <DashBoard></DashBoard> -->
@@ -18,8 +18,8 @@
 import TitleHeaderDashBoard from "./components/TitleHeaderDashBoard.vue";
 import SignHeaderDashBoard from "./components/SignHeaderDashBoard.vue";
 import ResultHeaderDashBoard from "./components/ResultHeaderDashBoard.vue";
-import ProductionLine from "./components/ProductionLine.vue";
-import TableValue from "./components/TableValue.vue";
+// import ProductionLine from "./components/ProductionLine.vue";
+// import TableValue from "./components/TableValue.vue";
 // import DashBoard from "./components/DashBoard.vue";
 export default {
   name: "App",
@@ -27,8 +27,8 @@ export default {
     TitleHeaderDashBoard,
     SignHeaderDashBoard,
     ResultHeaderDashBoard,
-    ProductionLine,
-    TableValue,
+    // ProductionLine,
+    // TableValue,
     // ExampleTable
     // DashBoard
   },
@@ -42,7 +42,7 @@ export default {
   grid-template-rows: auto auto auto;
   grid-template-areas: "Title" "Sign" "Result";
 }
-.container {
+.container-header {
   background-color: white;
   border: 2px solid black;
 }
