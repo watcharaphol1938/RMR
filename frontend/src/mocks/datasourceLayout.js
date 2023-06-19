@@ -6,7 +6,7 @@ const masterdatalayout = [
     w: 2.5,
     h: 3,
     lineName: "Coil Up",
-    or: 91.9,
+    or: 90.9,
     color: "orange",
   },
   {

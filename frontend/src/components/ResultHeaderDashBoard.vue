@@ -1,16 +1,5 @@
 <template>
   <div>
-    <!-- <div class="result" :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : 'black'}">
-      <div class="value">
-        <div class="operation-ratio" :style="{'color': target == null ? '' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : ''}">OR {{ or == null ? '' : or + "%" }}</div>
-        <hr :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null? 'red' : 'black'}" />
-        <div class="target">Target {{ target == null ? "" : target + "%" }}</div>
-      </div>
-      <div class="symbol" :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85  || or == null ? 'red' : 'black'}" >
-        <div class="symbol-result" :style="{'color': target == null ? '' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : ''}">{{ target == null ? "" :  or == null ? 'X' : or < target ? 'X' : 'O'}}</div>
-      </div>
-    </div> -->
-
     <div
       class="result"
       :style="{
