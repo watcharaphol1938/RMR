@@ -6,8 +6,8 @@ const masterdatalayout = [
     w: 2.5,
     h: 3,
     lineName: "Coil Up",
-    or: 91.9,
-    color: "red",
+    or: 90.9,
+    color: "orange",
   },
   {
     i: "2",

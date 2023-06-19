@@ -1,16 +1,5 @@
 <template>
   <div>
-    <!-- <div class="result" :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : 'black'}">
-      <div class="value">
-        <div class="operation-ratio" :style="{'color': target == null ? '' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : ''}">OR {{ or == null ? '' : or + "%" }}</div>
-        <hr :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null? 'red' : 'black'}" />
-        <div class="target">Target {{ target == null ? "" : target + "%" }}</div>
-      </div>
-      <div class="symbol" :style="{'border-color': target == null ? 'black' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85  || or == null ? 'red' : 'black'}" >
-        <div class="symbol-result" :style="{'color': target == null ? '' : or >= 90 ? 'limegreen' : or >= 85 && or < 90 ? 'orange' : or < 85 || or == null ? 'red' : ''}">{{ target == null ? "" :  or == null ? 'X' : or < target ? 'X' : 'O'}}</div>
-      </div>
-    </div> -->
-
     <div
       class="result"
       :style="{
@@ -136,43 +125,37 @@ export default {
   border-radius: 10px;
   margin: 1%;
   margin-left: 64%;
-
-  width: 35%;
-  height: 70%;
 }
 hr {
   border: 1px solid;
   margin-top: 0%;
+  margin-bottom: 0%;
 }
 .value {
   margin-left: 5%;
-  margin-top: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
   font-family: Arial;
-
-  position: relative;
 }
 .operation-ratio {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: bold;
 }
 .target {
-  font-size: 1.2vw;
-  position: absolute;
-  top: 2em;
+  font-size: 1vw;
 }
 .symbol {
   font-family: Arial;
   text-align-last: center;
 
-  position: relative;
-  margin-top: 45%;
+  margin-top: 35%;
+  margin-bottom: 35%;
 
   border: 1px solid;
   width: 80%;
-  height: 53%;
+  height: 55%;
 }
 .symbol-result {
-  margin-top: 0%;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 </style>
