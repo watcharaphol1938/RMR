@@ -6,8 +6,8 @@ const masterdatalayout = [
     w: 2.5,
     h: 3,
     lineName: "Coil Up",
-    or: 90.9,
-    color: "orange",
+    or: 91.9,
+    color: "red",
   },
   {
     i: "2",
@@ -27,7 +27,7 @@ const masterdatalayout = [
     h: 4,
     lineName: "Tube Intercooler",
     or: 89.5,
-    color: "orange",
+    color: "yellow",
   },
   {
     i: "4",
