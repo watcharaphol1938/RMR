@@ -10,8 +10,9 @@
 
 <script>
 export default {
-    name: "TitleHeaderDashBoard",
-    data() {
+  name: 'FactoryView',
+  props: ['factoryName'],
+  data() {
     return {
       currentDateTime: null,
     };
@@ -19,7 +20,9 @@ export default {
   mounted() {
     setInterval(() => {
       const date = new Date();
-      this.currentDateTime = `${date.getDate()}/${date.getMonth() + 1 }/${date.getFullYear()} ${date.toLocaleTimeString()}`;
+      this.currentDateTime = `${date.getDate()}/${
+        date.getMonth() + 1
+      }/${date.getFullYear()} ${date.toLocaleTimeString()}`;
     }, 1000);
   },
 };
@@ -31,7 +34,6 @@ export default {
 }
 .factory {
   font-family: Arial;
-  margin-top: 5px;
 
   font-weight: bolder;
   font-size: 1.5vw;

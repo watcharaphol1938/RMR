@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container-m">
       <grid-layout
         :layout.sync="layout"
         :col-num="12"
         :row-height="40"
-        :is-draggable="true"
-        :is-resizable="true"
-        :responsive="false"
+        :is-draggable="draggable"
+        :is-resizable="resizable"
+        :responsive="responsive"
         :vertical-compact="true"
         :use-css-transforms="true"
       >
@@ -19,10 +19,12 @@
           :w="item.w"
           :h="item.h"
           :i="item.i"
-          :static="true"
+          :linename="item.lineName"
           :class="`${item.color}`"
+          :static="true"
         >
           <div class="text">{{ item.lineName }}</div>
+          <!-- <div class="tab-value">%</div> -->
         </grid-item>
       </grid-layout>
     </div>
@@ -40,19 +42,18 @@ export default {
   },
   data() {
     return {
-      layout: masterdatalayout,
-      draggable: true,
-      resizable: true,
-      bounded: true,
+      layout: masterdatalayout
     };
   },
 };
 </script>
 
 <style scoped>
-.container {
+.container-m {
   background-color: white;
   border: 2px solid black;
+  margin-left: 8px;
+  margin-right: 8px;
   margin-top: -10px;
 }
 .vue-grid-item {
@@ -83,8 +84,5 @@ export default {
 }
 .white {
   background-color: white;
-}
-.orange {
-  background-color: orange;
 }
 </style>
